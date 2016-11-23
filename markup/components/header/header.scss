@@ -21,4 +21,41 @@
 
     @include bg($logo-header);
   }
+  &._white {
+    position: relative;
+    .header__logo {
+      @include bg($logo-header-blue);
+    }
+    .top-menu {
+      &__item {
+        color: $blue;
+        span {
+          border-bottom-color: rgba($blue, .35);
+          text-shadow: none;
+        }
+        &:hover {
+          span {
+            border-bottom-color: $blue;
+          }
+        }
+        &._active {
+          border-top-color: $blue;
+          span {
+            color: $black;
+          }
+        }
+      }
+    }
+    .header-contacts__email {
+      color: $blue;
+      &:hover {
+        border-bottom-color: rgba($blue, .35);
+      }
+    }
+    .header-contacts-phone {
+      &__item {
+        color: $black;
+      }
+    }
+  }
 }

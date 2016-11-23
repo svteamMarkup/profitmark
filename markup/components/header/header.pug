@@ -1,5 +1,6 @@
 mixin header(data)
-  header.header
+  - var modiffer = attributes.class || '';
+  header.header(class=modiffer)
     a(href="#" title="").header__logo Profit Mark
     +top-menu()
     +header-contacts()

@@ -1,0 +1,42 @@
+.service-list {
+  @extend .wrapper;
+}
+
+.service-item {
+  display: flex;
+
+  padding: 70px 0;
+
+  border-bottom: 1px dashed #9b9b9b;
+
+  align-items: flex-start;
+  justify-content: space-between;
+  &:last-child {
+    border-bottom: none;
+  }
+  &__icon {
+    width: 322px;
+  }
+  &__content {
+    width: 694px;
+  }
+  &:nth-child(odd) {
+    .service-item__icon {
+      text-align: right;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+
+    color: $blue;
+
+    font-size: 28px;
+    font-weight: 700;
+  }
+  &__text {
+    color: #2c2b2a;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

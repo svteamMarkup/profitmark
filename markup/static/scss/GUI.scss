@@ -48,3 +48,29 @@
   font-weight: 700;
   line-height: 34px;
 }
+
+p {
+      margin: 25px 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        position: relative;
+
+        padding-left: 30px;
+
+        list-style: none;
+        &:before {
+          position: absolute;
+          top: 5px;
+          left: 0;
+
+          display: block;
+
+          content: "";
+
+          @include bg($check);
+        }
+      }
+    }

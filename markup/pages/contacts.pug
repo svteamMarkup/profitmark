@@ -1,0 +1,9 @@
+extends ./__layout.pug
+
+block header
+  +header()._white
+
+block content
+  +header-banner('Контактная информация')._small
+  +service-list()
+  +callback()

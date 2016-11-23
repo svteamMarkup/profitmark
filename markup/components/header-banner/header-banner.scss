@@ -6,6 +6,11 @@
   background: url(%=static=%assets/header-banner/bg.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  &._small {
+    min-height: 131px;
+
+    background: url(%=static=%assets/header-banner/bg-small.jpg) no-repeat;
+  }
   &__content {
     text-align: center;
 
@@ -15,6 +20,10 @@
     color: $white;
 
     font-size: 43px;
+    &._small {
+      font-size: 30px;
+      line-height: 32px;
+    }
   }
   &__subtitle {
     margin-bottom: 40px;

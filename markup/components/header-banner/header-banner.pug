@@ -1,6 +1,11 @@
-mixin header-banner(data)
-  .header-banner
-    .header-banner__content
-      .header-banner__title SIA Profit mark приглашает к сотрудничеству 
-      .header-banner__subtitle Мы рады предложить Вам услуги по бухгалтерскому сопровождению Вашего бизнеса.
-      a(href="#" title="").button._green._xxl Оставить заявку
+mixin header-banner(text)
+  - var modiffer = attributes.class || '';
+  .header-banner(class=modiffer)
+    - if (modiffer == '')
+      .header-banner__content
+        .header-banner__title SIA Profit mark приглашает к сотрудничеству 
+        .header-banner__subtitle Мы рады предложить Вам услуги по бухгалтерскому сопровождению Вашего бизнеса.
+        a(href="#" title="").button._green._xxl Оставить заявку
+    - else
+      .header-banner__content
+        .header-banner__title._small!=text
