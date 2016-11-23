@@ -1,0 +1,129 @@
+.advantages {
+  display: flex;
+
+  padding-top: 75px;
+  padding-bottom: 45px;
+
+  align-items: flex-start;
+  @extend .wrapper;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__title {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.advantages-item {
+  position: relative;
+
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-right: 18px;
+  padding-left: 70px;
+
+  color: #666;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    content: "";
+  }
+  &._three {
+    max-width: 322px;
+  }
+  &._two {
+    max-width: 550px;
+  }
+  &._cost-cutting {
+    &:before {
+      @include bg($cost-cutting);
+    }
+  }
+  &._save-job {
+    &:before {
+      @include bg($save-job);
+    }
+  }
+  &._no-failure-operation {
+    &:before {
+      @include bg($no-failure-operation);
+    }
+  }
+  &._saving-time {
+    &:before {
+      @include bg($saving-time);
+    }
+  }
+  &._guaranteed-quality {
+    &:before {
+      @include bg($guaranteed-quality);
+    }
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
+.advantages-calculate {
+  position: relative;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 434px;
+  height: 82px;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-right: 90px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: $green;
+  border: 1px dashed #3d5ea9;
+  border-radius: 3px;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 21px;
+  &:before {
+    position: absolute;
+
+    display: block;
+
+    content: "";
+  }
+  span {
+    display: block;
+
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &._salary {
+    padding-left: 114px;
+    &:before {
+      top: 15px;
+      left: 21px;
+
+      @include bg($salary-calculator);
+    }
+  }
+  &._service-cost {
+    padding-left: 108px;
+    &:before {
+      top: 18px;
+      left: 18px;
+
+      @include bg($service-cost-calculator);
+    }
+  }
+}

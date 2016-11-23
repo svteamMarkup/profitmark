@@ -1,0 +1,29 @@
+.footer {
+  background: #7d7d7d;
+  padding: 26px 0 23px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend .wrapper;
+  }
+  &__logo {
+    @include bg($logo-footer);
+    text-indent: -9999px;
+  }
+}
+
+.footer-menu {
+  &__item {
+    font-size: 14px;
+    color: $white;
+    text-decoration: none;
+    transition: all .33s ease-out;
+    border-bottom: 1px solid transparent;
+    margin-right: 30px;
+    &:hover {
+      border-bottom-color: rgba($white, .35);
+    }
+  }
+}
+

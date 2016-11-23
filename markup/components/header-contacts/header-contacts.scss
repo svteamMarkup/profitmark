@@ -1,0 +1,48 @@
+.header-contacts {
+  position: relative;
+
+  padding-left: 50px;
+
+  text-align: right;
+  &:before {
+    position: absolute;
+    left: 0;
+
+    display: block;
+
+    content: "";
+
+    @include bg($phone);;
+  }
+  &__email {
+    transition: all .33s ease-out;
+    text-decoration: none;
+
+    color: $white;
+    border-bottom: 1px solid transparent;
+
+    font-size: 14px;
+    &:hover {
+      border-bottom-color: rgba($white, .3);
+    }
+  }
+}
+
+.header-contacts-phone {
+  &__item {
+    display: inline;
+
+    vertical-align: top;
+
+    color: $white;
+
+    font-size: 22px;
+    line-height: 1;
+    &._small {
+      position: relative;
+      top: 1px;
+
+      font-size: 14px;
+    }
+  }
+}

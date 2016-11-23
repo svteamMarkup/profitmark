@@ -1,0 +1,75 @@
+.callback {
+  padding-top: 46px;
+  padding-bottom: 50px;
+
+  background: #b1b1b1;
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: space-between;
+  }
+  &__title {
+    position: relative;
+
+    padding-left: 114px;
+
+    color: $white;
+
+    font-size: 22px;
+    font-weight: 700;
+    &:before {
+      position: absolute;
+      top: -14px;
+      left: 0;
+
+      display: block;
+
+      content: "";
+
+      @include bg($callback);
+    }
+    span {
+      display: block;
+
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.callback-form {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: flex-start;
+  &__field {
+    position: relative;
+
+    margin-right: 10px;
+    &:before {
+      position: absolute;
+      top: 17px;
+      left: 20px;
+
+      display: block;
+
+      content: "";
+
+      @include bg($phone2);
+    }
+    input {
+      box-sizing: border-box;
+      width: 293px;
+      height: 51px;
+      padding-left: 52px;
+
+      border: 0;
+      border-radius: 3px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

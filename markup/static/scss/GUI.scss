@@ -1,0 +1,50 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.button {
+  display: inline-block;
+
+  box-sizing: border-box;
+
+  transition: all .33s ease-out;
+  text-decoration: none;
+
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba($black, .35);
+  &._green {
+    color: $white;
+    background: linear-gradient(to bottom, #5fc23c, #3fb614);
+    &:hover {
+      background: linear-gradient(to bottom, #3fb614, #5fc23c);
+      box-shadow: none;
+    }
+  }
+  &._xxl {
+    width: 330px;
+    height: 70px;
+
+    font-size: 21px;
+    line-height: 70px;
+  }
+  &._xl {
+    width: 154px;
+    height: 51px;
+
+    font-size: 16px;
+    line-height: 51px;
+  }
+  &._submit {
+    line-height: initial;
+  }
+}
+
+.title {
+  text-align: center;
+
+  color: #333;
+
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+}
