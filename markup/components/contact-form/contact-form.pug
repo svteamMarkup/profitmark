@@ -1,0 +1,17 @@
+mixin contact-form(data)
+  form(action="" method="").contact-form
+    .contact-form__title Отправить сообщение
+
+    .contact-form__column._left
+      .contact-form__field._user
+        input(type="text" value="" placeholder="Ваше имя")
+      .contact-form__field._phone
+        input(type="text" value="" placeholder="Ваш телефон")
+      .contact-form__field._email
+        input(type="text" value="" placeholder="Ваш эмеил")
+
+    .contact-form__column._right
+      .contact-form__field._textarea
+        textarea(placeholder="Введите сообщение")
+
+    input(type="submit" value="Отправить").contact-form__submit.button._green

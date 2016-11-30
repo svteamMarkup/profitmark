@@ -38,4 +38,10 @@
   transform: translate(-50%,-50%);
 }
 
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 // You can add your own mixins here:

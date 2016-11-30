@@ -1,4 +1,4 @@
-mixin header-banner(text)
+mixin header-banner(text, placehold)
   - var modiffer = attributes.class || '';
   .header-banner(class=modiffer)
     - if (modiffer == '')
@@ -9,3 +9,4 @@ mixin header-banner(text)
     - else
       .header-banner__content
         .header-banner__title._small!=text
+        .header-banner__placehold!=placehold

@@ -1,0 +1,68 @@
+.contact-list {
+  position: relative;
+
+  display: flex;
+
+  padding-top: 50px;
+  padding-bottom: 55px;
+
+  align-items: center;
+  @extend .wrapper;
+  justify-content: space-between;
+}
+
+.contact-list-block {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 322px;
+  min-height: 137px;
+
+  box-shadow: 0 0 5px rgba($black, .21);
+  &:before {
+    left: 30px;
+
+    display: block;
+
+    content: "";
+
+    @include vertical-center;
+  }
+  &._phone {
+    padding-left: 110px;
+    &:before {
+      @include bg($cellphone);
+    }
+  }
+  &._email {
+    padding-left: 140px;
+    &:before {
+      @include bg($email);
+    }
+  }
+  &._skype {
+    padding-left: 147px;
+    &:before {
+      @include bg($skype);
+    }
+  }
+  &__content {
+    @include vertical-center;
+  }
+  &__item {
+    margin-bottom: 3px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      transition: all .33s ease-out;
+      text-decoration: none;
+
+      color: $blue;
+      border-bottom: 1px solid rgba($blue, .31);
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}

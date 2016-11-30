@@ -1,0 +1,153 @@
+mixin calculator(data)
+  .calculator
+    .calculator-form
+      .calculator-form__row
+        .calculator-form__label Есть ли у вас налоговая книжка
+        .calculator-form__field
+          select
+            option Да
+            option Нет
+
+      .calculator-form__row
+        .calculator-form__label Являетесь ли вы пенсионером
+        .calculator-form__field
+          select
+            option Да
+            option Нет
+
+      .calculator-form__row
+        .calculator-form__label Инвалидность
+        .calculator-form__field
+          select
+            option Да
+            option Нет
+
+      .calculator-form__row
+        .calculator-form__label Получаете ли вы пенсию по инвалидности?
+        .calculator-form__field
+          select
+            option Да
+            option Нет
+
+      .calculator-form__row
+        .calculator-form__label Статус политически репрессированного лица или участника национального движения сопротивления
+        .calculator-form__field
+          select
+            option Да
+            option Нет
+
+      .calculator-form__row
+        .calculator-form__label Аванс, который вы получили
+        .calculator-form__field
+          input(type="text" value="0,00")
+
+      .calculator-form__row
+        .calculator-form__label Начисленная зарплата брутто
+        .calculator-form__field
+          input(type="text" value="500,00")
+
+      .calculator-form__row
+        .calculator-form__label Начислена сумма отпускных
+        .calculator-form__field
+          input(type="text" value="0,00")
+
+      .calculator-form__row
+        .calculator-form__label Начислена сумма по больничному листу
+        .calculator-form__field
+          input(type="text" value="0,00")
+
+      .calculator-form__row
+        .calculator-form__label Начисления, включенные в заработную плату:
+        .calculator-form__field
+          input(type="text" value="0,00")
+
+      .calculator-form__row
+        .calculator-form__label Подарки
+        .calculator-form__field
+          input(type="text" value="0,00")
+
+      .calculator-form__row
+        .calculator-form__label Блага полученные
+        .calculator-form__field
+          input(type="text" value="0,00")
+
+      .calculator-form__row
+        .calculator-form__label Другие начисления
+        .calculator-form__field
+          input(type="text" value="0,00")
+
+      .calculator-form__row
+        .calculator-form__label Дополнительный льготы для инвалидов и репрессированных
+        .calculator-form__field
+          input(type="text" value="0,00")
+
+      .calculator-form__row
+        .calculator-form__label Необлагаемый минимум
+        .calculator-form__field
+          input(type="text" value="75,00")
+
+      .calculator-form__row
+        .calculator-form__label Необлагаемый минимум на иждивенца
+        .calculator-form__field
+          input(type="text" value="175,00")
+
+      .calculator-form__row
+        .calculator-form__label Количество иждивенцев
+        .calculator-form__field
+          input(type="text" value="1")
+
+      .calculator-form__row
+        .calculator-form__label Социальные взносы, удержанные с работника (%)
+        .calculator-form__field
+          input(type="text" value="10,50")
+
+      .calculator-form__row
+        .calculator-form__label Подоходный налог с населения, удержанный с работника (%)
+        .calculator-form__field
+          input(type="text" value="23,00")
+
+      .calculator-form__row
+        .calculator-form__label Социальные взносы, уплаченные работодателем (%)
+        .calculator-form__field
+          input(type="text" value="23,50")
+
+      input(type="submit" value="Рассчитать").button._green.calculator-form__submit
+
+      .calculator-result
+        .calculator-result__title Результат расчета
+
+        .calculator-result__row
+          .calculator-result__label Социальные взносы, удержанные с работника
+          .calculator-result__value 52.50
+
+        .calculator-result__row
+          .calculator-result__label Облагаемый подоходным налогом доход
+          .calculator-result__value 197.50
+
+        .calculator-result__row
+          .calculator-result__label Подоходный налог, удержанный с работника
+          .calculator-result__value 45.43
+
+        .calculator-result__row
+          .calculator-result__label Всего налоги, удержанные с зарплаты работника
+          .calculator-result__value 97.93
+
+        .calculator-result__row
+          .calculator-result__label Аванс, выплаченный работнику
+          .calculator-result__value 0.00
+
+        .calculator-result__row
+          .calculator-result__label Всего удержано с работника
+          .calculator-result__value 97.93
+
+        .calculator-result__row
+          .calculator-result__label Сумма, выплаченная работнику на руки
+          .calculator-result__value 402.08
+
+        .calculator-result__row
+          .calculator-result__label Социальные взносы, уплаченные работодателем
+          .calculator-result__value 117.95
+
+        .calculator-result__row
+          .calculator-result__label Расходы предприятия на зарплату работника
+          .calculator-result__value 617.95
