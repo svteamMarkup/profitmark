@@ -1,0 +1,13 @@
+extends ./__layout.pug
+
+block header
+  +header()._white
+
+block content
+  +header-banner('Блог о бухгалтерском учёте')._small
+
+  +blog-category
+
+  .blog__wrapper.wrapper
+    +blog-list
+    +recommend

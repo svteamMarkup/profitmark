@@ -1,0 +1,28 @@
+.blog-post {
+  @extend .blog-list;
+  padding-bottom: 135px;
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 16px;
+    color: $blue;
+    margin-bottom: 0;
+  }
+  p {
+    margin: 0 0 10px;
+  }
+  &__date {
+    @extend .blog-list-item__date;
+  }
+  &__tags {
+    @extend .blog-list-item__tags;
+    margin-left: 0;
+  }
+  &__social {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

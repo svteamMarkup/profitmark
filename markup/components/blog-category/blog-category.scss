@@ -1,0 +1,39 @@
+.blog-category {
+  position: relative;
+  z-index: 99;
+  top: -20px;
+
+  display: flex;
+
+  width: 450px;
+  height: 40px;
+  margin: auto;
+
+  background: linear-gradient(to bottom, $white, #f0f0f0);
+  box-shadow: 1px 1px 5px rgba($black, .21);
+
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+    display: block;
+
+    box-sizing: border-box;
+    width: 33.33333%;
+
+    transition: all .33s ease-out;
+    text-align: center;
+    text-decoration: none;
+
+    color: #333;
+    border-right: 1px solid #afbcda;
+
+    line-height: 40px;
+    &:last-child {
+      border-right: 0;
+    }
+    &._active,
+    &:hover {
+      background: $white;
+    }
+  }
+}

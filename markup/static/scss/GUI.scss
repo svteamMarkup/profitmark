@@ -12,6 +12,37 @@
   border: 0;
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba($black, .35);
+  &._more {
+    display: block;
+
+    width: 223px;
+    height: 47px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    color: #7d7d7d;
+    border: 0;
+    background: #eee;
+    box-shadow: none;
+
+    font-size: 18px;
+    line-height: 47px;
+    &:hover {
+      background: #eee - #111;
+    }
+  }
+  &._blue {
+    transition: all .33s ease-out;
+
+    color: $white;
+    border-radius: 0;
+    background: $blue;
+    &:hover {
+      background-color: $blue + #111;
+    }
+  }
   &._green {
     color: $white;
     background: linear-gradient(to bottom, #5fc23c, #3fb614);
@@ -50,27 +81,27 @@
 }
 
 p {
-      margin: 25px 0;
+  margin: 25px 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    position: relative;
+
+    padding-left: 30px;
+
+    list-style: none;
+    &:before {
+      position: absolute;
+      top: 5px;
+      left: 0;
+
+      display: block;
+
+      content: "";
+
+      @include bg($check);
     }
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        position: relative;
-
-        padding-left: 30px;
-
-        list-style: none;
-        &:before {
-          position: absolute;
-          top: 5px;
-          left: 0;
-
-          display: block;
-
-          content: "";
-
-          @include bg($check);
-        }
-      }
-    }
+  }
+}
